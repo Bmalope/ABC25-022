@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabz Tech - Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header>
+        <img src="Images/logo.jpg" width="125" height="100" alt="Kabz Tech Logo" class="logo">
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            
+            <label for="menu-toggle" class="hamburger-label" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </label>
+
+      <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Product.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="Checkout.html">Checkout</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+            
+        </nav>
+ </header>
+ 
+ 
+    <!-- MAIN CONTENT -->
+    <main>
+        <section class="feedback-section">
+            <!-- Two columns: Form on left, Info on right -->
+            <div class="feedback-layout">
+                <!-- ── LEFT: FEEDBACK FORM ── -->
+                <article class="feedback-form-card">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill in the form below and we will reply within 24 hours.</p>
+                    <form id="feedbackForm" novalidate>
+ 
+                        <!-- Name fields -->
+                        <fieldset>
+                            <legend>Your Name</legend>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name">First Name *</label>
+                                    <input type="text"id="first-name" name="firstName" placeholder="Boemo" required minlength="2"
+                                        autocomplete="given-name" aria-required="true" aria-describedby="fname-error">
+                                    <span class="field-error" id="fname-error">Please enter your first name.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Last Name *</label>
+                                    <input type="text"id="last-name" name="lastName" placeholder="Malope" required minlength="2"
+                                        autocomplete="family-name" aria-required="true" aria-describedby="lname-error">
+                                    <span class="field-error" id="lname-error">Please enter your last name.</span>
+                                </div>
+                            </div>
+                        </fieldset>
+ 
+                        <!-- Contact details -->
+                        <fieldset>
+                            <legend>Contact Details</legend>
+ 
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email"id="email" name="email" placeholder="you@example.com" required
+                                    autocomplete="email"
+                                    aria-required="true"
+                                    aria-describedby="email-error"
+                                >
+                                <span class="field-error" id="email-error">Please enter a valid email address.</span>
+                            </div>
+ 
+                            <div class="form-group">
+                                <label for="phone">Phone Number (optional)</label>
+                                <input type="tel"id="phone" name="phone" placeholder="+267 71 000 000" autocomplete="tel" pattern="[\+0-9\s\-]+">
+                                
+                            </div>
+                        </fieldset>
+ 
+                        <!-- Feedback details -->
+                        <fieldset>
+                            <legend>Your Feedback</legend>
+ 
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject"name="subject" required aria-required="true" aria-describedby="subject-error">
+                                    <option value="" disabled selected>Choose a subject...</option>
+                                    <option value="product">Product Question</option>
+                                    <option value="order">Order or Delivery</option>
+                                    <option value="return">Return or Refund</option>
+                                    <option value="complaint">Complaint</option>
+                                    <option value="compliment">Compliment</option>
+                                    <option value="suggestion">Suggestion</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="field-error" id="subject-error">Please choose a subject.</span>
+                            </div>
+ 
+                            
+                            <div class="form-group">
+                                <label for="message">Your Message *</label>
+                                <textarea id="message" name="message" placeholder="Tell us what you think. What did we do well? What can we improve?" required
+                                    minlength="20"aria-required="true"aria-describedby="message-error"
+                                ></textarea>
+                                <span class="field-error" id="message-error">Please write a message (at least 20 characters).</span>
+                            </div>
+                        </fieldset>
+ 
+                        <!-- Consent checkbox -->
+                        <fieldset>
+                            <legend>Consent</legend>
+                            <div class="form-check">
+                                <input type="checkbox" id="consent" name="consent" required aria-required="true" aria-describedby="consent-error"
+                                >
+                                <label for="consent" class="check-label">
+                                    I agree to the <a href="#">Privacy Policy</a> and allow Kabz Tech to contact me about my message. *
+                                </label>
+                            </div>
+                            <span class="field-error" id="consent-error">You must agree before submitting.</span>
+                        </fieldset>
+ 
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary full-btn">
+                            Send Message →
+                        </button>
+ 
+                    </form>
+                </article>
+ 
+ 
+                <!-- ── RIGHT: CONTACT INFO ── -->
+                <aside class="contact-info">
+ 
+                    <!-- Contact details card -->
+                    <section class="info-card">
+                        <h3>Contact Details</h3>
+                        <dl>
+                            <div class="info-row">
+                                <dt>📍 Address</dt>
+                                <dd>Plot 12345, Main Mall, Gaborone, Botswana</dd>
+                            </div>
+                            <div class="info-row">
+                                <dt>📞 Phone</dt>
+                                <dd><a href="tel:+2677777777">+267 70000001</a></dd>
+                            </div>
+                            <div class="info-row">
+                                <dt>💬 WhatsApp</dt>
+                                <dd><a href="#">+267 71 234 567</a></dd>
+                            </div>
+                        </dl>
+                    </section>
+ 
+                    <!-- Opening hours card -->
+                    <section class="info-card">
+                        <h3>Store Hours</h3>
+                        <dl class="hours-list">
+                            <div class="hours-row">
+                                <dt>Monday – Friday</dt>
+                                <dd>8:00am – 7:00pm</dd>
+                            </div>
+                            <div class="hours-row">
+                                <dt>Saturday</dt>
+                                <dd>8:00am – 6:00pm</dd>
+                            </div>
+                            <div class="hours-row">
+                                <dt>Sunday</dt>
+                                <dd>9:00am – 3:00pm</dd>
+                            </div>
+                            <div class="hours-row">
+                                <dt>Public Holidays</dt>
+                                <dd class="closed">Closed</dd>
+                            </div>
+                        </dl>
+                    </section>
+ 
+                    <!-- Social media card -->
+                    <section class="info-card">
+                        <h3>Find Us On Social Media</h3>
+                        <nav aria-label="Social media links">
+                            <div class="social-links">
+                                <a href="https://facebook.com/kabztech" target="_blank" rel="noopener noreferrer" class="social-btn facebook">
+                                    f  Facebook
+                                </a>
+                            </div>
+                        </nav>
+                    </section>
+                </aside>
+ 
+            </div>
+            <!-- end feedback-layout -->
+ 
+        </section>
+ 
+        <!-- FAQ SECTION -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <p class="faq-subtitle">Quick answers to common questions.</p>
+ 
+            <div class="faq-list">
+ 
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq1">
+                        How long does delivery take?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq1">
+                        Same-day delivery in Gaborone for orders placed before 2pm. 
+                        Nationwide delivery takes 2 to 3 business days. 
+                        You will receive an SMS with your tracking link once dispatched.
+                    </div>
+                </article>
+ 
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+                        Can I return a product?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq3">
+                        Yes. We offer a 30-day return policy. The product must be in its 
+                        original packaging with all accessories. Bring it to our store or 
+                        contact us to arrange a collection.
+                    </div>
+                </article>
+ 
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+                        What payment methods do you accept?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq4">
+                        We accept Visa,fnb payment , Orange Money, and MyZaka. 
+                        We also offer a 6-month instalment plan for purchases 
+                        over P2,000.
+                    </div>
+                </article>
+            </div>
+        </section>
+ 
+    </main>
+ 
+ 
+    <!-- FOOTER -->
+    <footer id="footer">
+        <p class="footer-copy">&copy; 2026 Kabz Tech. All Rights Reserved.</p>
+    </footer>
+ 
+ 
+    <!-- JAVASCRIPT - form validation and FAQ accordion -->
+    <script>
+ 
+        /* ── FEEDBACK FORM VALIDATION ── */
+        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+            e.preventDefault(); /* Stop the page from refreshing */
+ 
+            var valid = true;
+ 
+            /* Get all the fields */
+            var firstName = document.getElementById('first-name');
+            var lastName  = document.getElementById('last-name');
+            var email     = document.getElementById('email');
+            var subject   = document.getElementById('subject');
+            var message   = document.getElementById('message');
+            var consent   = document.getElementById('consent');
+ 
+            /* Check first name */
+            if (firstName.value.trim() === '') {
+                document.getElementById('fname-error').style.display = 'block';
+                valid = false;
+            } else {
+                document.getElementById('fname-error').style.display = 'none';
+            }
+ 
+            /* Check last name */
+            if (lastName.value.trim() === '') {
+                document.getElementById('lname-error').style.display = 'block';
+                valid = false;
+            } else {
+                document.getElementById('lname-error').style.display = 'none';
+            }
+ 
+            /* Check email */
+            if (email.value.trim() === '' || !email.value.includes('@')) {
+                document.getElementById('email-error').style.display = 'block';
+                valid = false;
+            } else {
+                document.getElementById('email-error').style.display = 'none';
+            }
+ 
+            /* Check subject is selected */
+            if (subject.value === '') {
+                document.getElementById('subject-error').style.display = 'block';
+                valid = false;
+            } else {
+                document.getElementById('subject-error').style.display = 'none';
+            }
+ 
+            /* Check message length */
+            if (message.value.trim().length < 20) {
+                document.getElementById('message-error').style.display = 'block';
+                valid = false;
+            } else {
+                document.getElementById('message-error').style.display = 'none';
+            }
+ 
+            /* Check consent checkbox */
+            if (!consent.checked) {
+                document.getElementById('consent-error').style.display = 'block';
+                valid = false;
+            } else {
+                document.getElementById('consent-error').style.display = 'none';
+            }
+ 
+            /* If all fields are valid, submit */
+            if (valid) {
+                var btn = this.querySelector('button[type="submit"]');
+                btn.textContent = '✓ Message Sent! We will be in touch soon.';
+                btn.style.background = '#2d7a3a';
+                this.reset(); /* Clear the form */
+            }
+        });
+ 
+ 
+        /* ── FAQ ACCORDION ── */
+        var faqButtons = document.querySelectorAll('.faq-question');
+ 
+        faqButtons.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+ 
+                /* Find the answer linked to this button */
+                var answerId = btn.getAttribute('aria-controls');
+                var answer   = document.getElementById(answerId);
+                var isOpen   = btn.classList.contains('open');
+ 
+                /* Close all open answers first */
+                faqButtons.forEach(function(otherBtn) {
+                    var otherId     = otherBtn.getAttribute('aria-controls');
+                    var otherAnswer = document.getElementById(otherId);
+                    otherBtn.classList.remove('open');
+                    otherBtn.setAttribute('aria-expanded', 'false');
+                    otherAnswer.classList.remove('open');
+                });
+ 
+                /* If the clicked one was closed, open it */
+                if (!isOpen) {
+                    btn.classList.add('open');
+                    btn.setAttribute('aria-expanded', 'true');
+                    answer.classList.add('open');
+                }
+            });
+        });
+ 
+    </script>
+ 
+</body>
+</html>
