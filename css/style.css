@@ -644,7 +644,7 @@ textarea{
     margin-top: 40px;
 }/* Responsive */
 
-@media screen and (max-width:1024px){
+@media screen and (min-width:1024px){
 
     .checkout-grid{
         flex-direction: column;
@@ -658,7 +658,7 @@ textarea{
 
 /* RESPONSIVE */
 
-@media screen and (max-width:1024px){
+@media screen and (min-width:1024px){
 
     .feedback-layout,
     .form-row{
@@ -668,7 +668,7 @@ textarea{
 
 /*RESPONSIVE DESIGN */
 
-@media screen and (max-width:1024px){
+@media screen and (min-width:1024px){
 
     .cart-layout{
         flex-direction: column;
@@ -697,7 +697,7 @@ textarea{
    RESPONSIVE DESIGN
 ========================= */
 
-@media screen and (max-width:1024px){
+@media screen and (min-width:1024px){
 
     .custom-product-grid{
         flex-direction: column;
@@ -754,7 +754,7 @@ img{
    RESPONSIVE DESIGN
 ========================= */
 
-@media screen and (max-width: 1024px){
+@media screen and (min-width: 1024px){
 
     /* Navigation */
 
